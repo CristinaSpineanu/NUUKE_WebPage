@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUUKE Cosmetics </title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600&display=swap" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--header -->
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="Index.html"><img src="Images/Nuuke.png" width="125px" /></a>
+        </div>
+        <nav>
+          <form class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Caută</button>
+          </form>
+          <ul id="MenuItems">
+            <li><a href="Index.html">Acasă</a></li>
+            <li><a href="productspage.html">Produse</a></li>
+            <li><a href="aboutpage.html">Informații</a></li>
+            <li><a href="contactPage.html">Contact</a></li>
+            <li><a href="accountPage.html">Cont</a></li>
+          </ul>
+        </nav>
+        <img class="cart" src="Images/Add-Cart-icon.png" width="30px" height="30px">
+        <img class="menuIcon" src="Images/menu.png" onclick="menutoggle()">
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1>Oferă pielii tale <br />respectul pe care îl merită!</h1>
+          <p>La NUUKE, noi credem în produse de beauty <br />
+            naturale, organice și vegane!</p>
+          <a href="productspage.html" class="btn">Aruncă o privire &#10137; </a>
+        </div>
+        <div class="col-2">
+          <img src="Images/3.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---featured categories ---->
+  <div class="categories">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <img src="Images/facecare.jpg">
+        </div>
+        <div class="col-3">
+          <img src="Images/handCare.jpg">
+        </div>
+        <div class="col-3">
+          <img src="Images/haircare.jpg">
+        </div>
+        <div class="col-3">
+          <img src="Images/terapyCare.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---Featured products ---->
+  <div class="small-container">
+    <h2 class="title">RECOMANDATE</h2>
+    <div class="row">
+      <div class="col-4">
+        <a href="productDetailsPepperCandle.html"><img src="Images/candlePepNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsPepperCandle.html">
+          <h4>Peppermint Candle</h4>
+        </a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>€25.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsArganOil.html"><img src="Images/arganOilNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsArganOil.html">
+          <h4>100% Argan Oil</h4>
+        </a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <p>€15.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsHandCream.html"><img src="Images/handcream.jpg" style="width:100%"></a>
+        <a href="productDetailsHandCream.html">
+          <h4>Hand Cream</h4>
+        </a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€8.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsMicellarWater.html"><img src="Images/micellarWaterNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsMicellarWater.html">
+          <h4>Micellar Water</h4>
+        </a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€10.00</p>
+      </div>
+    </div>
+    <!---latest products ---->
+    <h2 class="title">NOUTĂȚI</h2>
+    <div class="row">
+      <div class="col-4">
+        <a href="productDetailsSampoo.html"><img src="Images/sampoo.jpg" style="width:100%"></a>
+        <a href="productDetailsSampoo.html">
+          <h4>Hydratating Sampoo</h4>
+        </a>
+        <div class="rating">
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€29.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsConditioner.html"><img src="Images/conditioner.jpg" style="width:100%"></a>
+        <a href="productDetailsConditioner.html">
+          <h4>Hydratating Conditioner</h4>
+        </a>
+        <div class="rating">
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€29.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsHandSoap.html"><img src="Images/handsoapNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsHandSoap.html">
+          <h4>Hand Soap</h4>
+        </a>
+        <div class="rating">
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€7.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsAHA_BHACleanser.html"><img src="Images/aha+bhaCleanserNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsAHA_BHACleanser.html"><h4>AHA+BHA Cleanser</h4></a>
+        <div class="rating">
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€20.00</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <a href="productDetailsMarulaOil.html"><img src="Images/MarulaFaceOilNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsMarulaOil.html"><h4>Marula Face Oil</h4></a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>€15.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsGentleCleanser.html"><img src="Images/gentleCleanserNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsGentleCleanser.html"><h4>Gentle Cleanser </h4></a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>€20.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsVitC.html"><img src="Images/vitC.jpg" style="width:100%"></a>
+        <a href="productDetailsVitC.html"><h4>Vitamin C Serum</h4></a>
+        <div class="rating">
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€10.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsBuffet.html"><img src="Images/buffetSerum.jpg" style="width:100%"></a>
+        <a href="productDetailsBuffet.html"><h4>Buffet Face Serum</h4></a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>€15.00</p>
+      </div>
+    </div>
+  </div>
+
+  <!----------------- offer ----------------->
+  <div class="offer">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <a href="sampoo+condPackage.html"><img src="Images/sampoo.jpg" class="offer-img"></a>
+        </div>
+        <div class="col-2">
+          <p>Disponibile acum <b>EXCLUSIVE</b> online</p>
+          <a id="hrefPackage" href="sampoo+condPackage.html"><h1>Hydratating Sampoo + Conditioner Package</h1></a>
+          <small>
+            Suntem extrem de încântați sa vă prezenta duo-ul la care am lucrat
+            în ultimii 2 ani.Pentru că vrem că toată lumea să încerce aceste produse
+            minune, am decis să vi le oferim împreună în aceasta oferta de nerefuzat.
+            <br>
+          </small>
+          <a href="sampoo+condPackage.html" class="btn">Comandă Acum &#10137;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------- testimonial -------------->
+  <div class="testimonial">
+    <div class="small-container">
+      <h2 class="title">PĂRERILE CLIENȚILOR</h2>
+      <div class="row">
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>In hac habitasse platea dictumst. Sed ut blandit diam, eu tempor nibh. Aenean bibendum felis purus, sed iaculis metus blandit quis. Aliquam vitae ligula ut dolor volutpat vestibulum sed et justo. Donec molestie fringilla nulla vitae
+            malesuada.</p>
+          <i class="fa fa-quote-right"></i>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+
+          <img src="Images/user5.jpg">
+          <h3>Selena Halter</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>In hac habitasse platea dictumst. Sed ut blandit diam, eu tempor nibh. Aenean bibendum felis purus, sed iaculis metus blandit quis. Aliquam vitae ligula ut dolor volutpat vestibulum sed et justo. Donec molestie fringilla nulla vitae
+            malesuada.</p>
+          <i class="fa fa-quote-right"></i>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <img src="Images/user3.man.jpg">
+          <h3>Heath Rolang</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>In hac habitasse platea dictumst. Sed ut blandit diam, eu tempor nibh. Aenean bibendum felis purus, sed iaculis metus blandit quis. Aliquam vitae ligula ut dolor volutpat vestibulum sed et justo. Donec molestie fringilla nulla vitae
+            malesuada.</p>
+          <i class="fa fa-quote-right"></i>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <img src="Images/user4.jpg">
+          <h3>Iolanda Hadid</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------- payment methods -------------->
+  <div class="payMethods">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-5">
+          <img src="Images\logo-visa.png">
+        </div>
+        <div class="col-5">
+          <img src="Images\logo-americaex.jpg">
+        </div>
+        <div class="col-5">
+          <img src="Images\logo-paypal.jpg">
+        </div>
+        <div class="col-5">
+          <img src="Images\logo-applepay.png">
+        </div>
+        <div class="col-5">
+          <img src="Images\gpay.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------- footer -------------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col1">
+          <h3 class"h3Footer">DESCARCĂ APLICAȚIA</h3>
+          <p>Disponibil atât pe Android cât și pe Ios.</p>
+          <div class="app">
+            <a href="https://www.apple.com/app-store/"><img src="Images/app-store.png"></a>
+            <a href="https://play.google.com/"><img src="Images/play-store.png"></a>
+          </div>
+        </div>
+        <div class="footer-col2">
+          <img src="Images/nuukeBlack.png">
+          <p>We are here for all beauty lovers that want clean,vegan and cruelty free beauty products.</p>
+        </div>
+        <div class="footer-col3">
+          <h3 class"h3Footer">TERMENI ȘI CONDIȚII</h3>
+          <ul>
+            <li>Confidențialitate</li>
+            <li>Politica de retur</li>
+            <li>Politica de livrare</li>
+            <li>Program de afiliere</li>
+            <li>Termeni și condiții </li>
+            <li>Setări cookie</li>
+            <li>Reclamatii</li>
+          </ul>
+        </div>
+        <div class="footer-col4">
+          <h3 class"h3Footer">URMARESTE-NE PE:</h3>
+          <ul>
+            <li><a href="https://wwww.Facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.tiktok.com/">Tik Tok</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">Copyright © 2022 Coty AAC Holdings,DD.Toate drepturile rezervate.</p>
+    </div>
+  </div>
+
+  <!----------------- js for toggle menu-------------->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600&display=swap" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--header -->
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="Index.html"><img src="Images/Nuuke.png" width="125px" /></a>
+      </div>
+      <nav>
+        <form class="search-container">
+          <input type="text" placeholder="Search...">
+          <button type="submit">Caută</button>
+        </form>
+        <ul id="MenuItems">
+          <li><a href="Index.html">Acasă</a></li>
+          <li><a href="productspage.html">Produse</a></li>
+          <li><a href="aboutpage.html">Informații</a></li>
+          <li><a href="contactPage.html">Contact</a></li>
+          <li><a href="accountPage.html">Cont</a></li>
+        </ul>
+      </nav>
+      <img class="cart" src="Images/Add-Cart-icon.png" width="30px" height="30px">
+      <img class="menuIcon" src="Images/menu.png" onclick="menutoggle()">
+    </div>
+  </div>
+  <!----------------- Pagina contului -------------->
+  <div class="account-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <img src="Images/3.jpg" width="100%">
+        </div>
+        <div class="col-2">
+          <div class="form-container">
+            <div class="form-btn">
+              <span onclick="login()">Login </span>
+              <span onclick="register()">Inregistrare </span>
+              <hr id="Indicator">
+              <!-hor line that moves with form->
+            </div>
+            <form id="LogForm" name="formLg" method="post" onsubmit="return validationLog()">
+              <input type="text" id="email" name="eml" placeholder="Email">
+              <div id="email_error">Introduceti un email valid!</div>
+              <input type="password" id="password" name="pass" placeholder="Parola">
+              <div id="pass_error">Introduceti o parolă validă!</div>
+              <button type="submit" class="btn">Autentificare</button>
+              <a href="">Resetează parola!</a>
+            </form>
+
+            <form id="RegForm" name="formRg" method="post" onsubmit="return validationReg()">
+              <input type="text" id="numeUtil" name="util" placeholder="Nume utilizator">
+              <div id="util_error">Introduceti un nume!</div>
+              <input type="email" id="email_2" name="eml_2" placeholder="Email">
+              <div id="email_error_2">Introduceti un email valid!</div>
+              <input type="password" id="password_2" name="pass_2" placeholder="Parola">
+              <div id="pass_error_2">Introduceti o parolă validă!</div>
+              <button type="submit" class="btn">Inregistare</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!----------------- footer ----------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col1">
+          <h3 class"h3Footer">DESCARCĂ APLICAȚIA</h3>
+          <p>Disponibil atât pe Android cât și pe Ios.</p>
+          <div class="app">
+            <a href="https://www.apple.com/app-store/"><img src="Images/app-store.png"></a>
+            <a href="https://play.google.com/"><img src="Images/play-store.png"></a>
+          </div>
+        </div>
+        <div class="footer-col2">
+          <img src="Images/nuukeBlack.png">
+          <p>We are here for all beauty lovers that want clean,vegan and cruelty free beauty products.</p>
+        </div>
+        <div class="footer-col3">
+          <h3 class"h3Footer">TERMENI ȘI CONDIȚII</h3>
+          <ul>
+            <li>Confidențialitate</li>
+            <li>Politica de retur</li>
+            <li>Politica de livrare</li>
+            <li>Program de afiliere</li>
+            <li>Termeni și condiții </li>
+            <li>Setări cookie</li>
+            <li>Reclamatii</li>
+          </ul>
+        </div>
+        <div class="footer-col4">
+          <h3 class"h3Footer">URMARESTE-NE PE:</h3>
+          <ul>
+            <li><a href="https://wwww.Facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.tiktok.com/">Tik Tok</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">Copyright © 2022 Coty AAC Holdings,DD.Toate drepturile rezervate.</p>
+    </div>
+  </div>
+
+  <!----------------- js for toggle menu-------------->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+  <!---------------- js for toggle Form-------------->
+
+  <script>
+    var loginForm = document.getElementById("LogForm");
+    var regForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register() {
+      regForm.style.transform = "translateX(0px)";
+      loginForm.style.transform = "translateX(0px)";
+      Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login() {
+      regForm.style.transform = "translateX(300px)";
+      loginForm.style.transform = "translateX(300px)";
+      Indicator.style.transform = "translateX(0px)";
+    }
+  </script>
+
+  <!---------------- js for validation account-------------->
+  <script src="validation.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600&display=swap" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--header -->
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+          <a href="Index.html"><img src="Images/Nuuke.png" width="125px" /></a>
+      </div>
+      <nav>
+        <form class="search-container">
+          <input type="text" placeholder="Search...">
+          <button type="submit">Caută</button>
+        </form>
+        <ul id="MenuItems">
+          <li><a href="Index.html">Acasă</a></li>
+          <li><a href="productspage.html">Produse</a></li>
+          <li><a href="aboutpage.html">Informații</a></li>
+          <li><a href="contactPage.html">Contact</a></li>
+          <li><a href="accountPage.html">Cont</a></li>
+        </ul>
+      </nav>
+      <img class="cart" src="Images/Add-Cart-icon.png" width="30px" height="30px">
+      <img class="menuIcon" src="Images/menu.png" onclick="menutoggle()">
+    </div>
+  </div>
+
+  <!-------Single product details-------->
+  <div class="small-container single-product">
+    <div class="row">
+      <div class="col-2">
+        <img src="Images/MarulaFaceOilNuuke.jpg" width="100%">
+      </div>
+      <div class="col-2">
+        <p>Acasă / Curătare/Îngrijire față</p>
+        <h1>Marula Face Oil by NUUKE</h1>
+        <h4>€15.00</h4>
+        <select>
+          <option>Mărime</option>
+          <option>  30 ml </option>
+        </select>
+        <input type="number" value="1">
+        <!---quantity as input value 1--->
+        <a href="" class="btn">Adaugă</a>
+        <h3>Detalii<i class="fa fa-indent"></i></h3>
+        <br>
+        <p>Shasellus semper pretium nibh id blandit. Fusce arcu lectus, lobortis
+           ullamcorper dictum vel, posuere in leo. Phasellus rutrum elementum
+           aliquam. Fusce feugiat ex nibh, at auctor urna vestibulum ut.
+            In auctor sollicitudin luctus. Proin ultricies accumsan aliquet.
+            Sed.</p>
+      </div>
+    </div>
+  </div>
+  <!-------Titlu-------->
+  <div class="small-container">
+    <div class="row row-2">
+      <h2>Îți mai recomandăm și</h2>
+      <p>Extinde</p>
+    </div>
+  </div>
+
+
+  <!-------produse-------->
+  <div class="small-container">
+    <div class="row">
+      <div class="col-4">
+        <a href="productDetailsPepperCandle.html"><img src="Images/candlePepNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsPepperCandle.html"><h4>Peppermint Candle</h4></a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>€25.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsArganOil.html"><img src="Images/arganOilNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsArganOil.html"><h4>100% Argan Oil</h4></a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <p>€15.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsHandCream.html"><img src="Images/handcream.jpg" style="width:100%"></a>
+        <a href="productDetailsHandCream.html"><h4>Hand Cream</h4></a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€8.00</p>
+      </div>
+      <div class="col-4">
+        <a href="productDetailsMicellarWater.html"><img src="Images/micellarWaterNuuke.jpg" style="width:100%"></a>
+        <a href="productDetailsMicellarWater.html"><h4>Micellar Water</h4></a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>€10.00</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!----------------- footer -------------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col1">
+          <h3 class"h3Footer">DESCARCĂ APLICAȚIA</h3>
+          <p>Disponibil atât pe Android cât și pe Ios.</p>
+          <div class="app">
+            <a href="https://www.apple.com/app-store/"><img src="Images/app-store.png"></a>
+            <a href="https://play.google.com/"><img src="Images/play-store.png"></a>
+          </div>
+        </div>
+        <div class="footer-col2">
+          <img src="Images/nuukeBlack.png">
+          <p>We are here for all beauty lovers that want clean,vegan and cruelty free beauty products.</p>
+        </div>
+        <div class="footer-col3">
+          <h3 class"h3Footer">TERMENI ȘI CONDIȚII</h3>
+          <ul>
+            <li>Confidențialitate</li>
+            <li>Politica de retur</li>
+            <li>Politica de livrare</li>
+            <li>Program de afiliere</li>
+            <li>Termeni și condiții </li>
+            <li>Setări cookie</li>
+            <li>Reclamatii</li>
+          </ul>
+        </div>
+        <div class="footer-col4">
+          <h3 class"h3Footer">URMARESTE-NE PE:</h3>
+          <ul>
+            <li><a href="https://wwww.Facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.tiktok.com/">Tik Tok</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">Copyright © 2022 Coty AAC Holdings,DD.Toate drepturile rezervate.</p>
+    </div>
+  </div>
+
+  <!----------------- js for toggle menu-------------->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+
+</html>

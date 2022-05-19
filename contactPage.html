@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUUKE Cosmetics </title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600&display=swap" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--header -->
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="Index.html"><img src="Images/Nuuke.png" width="125px" /></a>
+        </div>
+        <nav>
+          <form class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Caută</button>
+          </form>
+          <ul id="MenuItems">
+            <li><a href="Index.html">Acasă</a></li>
+            <li><a href="productspage.html">Produse</a></li>
+            <li><a href="aboutpage.html">Informații</a></li>
+            <li><a href="contactPage.html">Contact</a></li>
+            <li><a href="accountPage.html">Cont</a></li>
+          </ul>
+        </nav>
+        <img class="cart" src="Images/Add-Cart-icon.png" width="30px" height="30px">
+        <img class="menuIcon" src="Images/menu.png" onclick="menutoggle()">
+      </div>
+    </div>
+  </div>
+
+  <div class="container_contact">
+    <form onsubmit="sendEmail(); reset(); return false">
+      <h3>Contacteaza-ne!</h3>
+      <input type="text" id="name" placeholder="Prenume si Nume" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Telefon" required>
+      <textarea id="message" rows="4" placeholder="Mesaj"></textarea>
+      <button type="submit">Trimite</button>
+    </form>
+  </div>
+
+  <!----------------- footer -------------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col1">
+          <h3 class"h3Footer">DESCARCĂ APLICAȚIA</h3>
+          <p>Disponibil atât pe Android cât și pe Ios.</p>
+          <div class="app">
+            <a href="https://www.apple.com/app-store/"><img src="Images/app-store.png"></a>
+            <a href="https://play.google.com/"><img src="Images/play-store.png"></a>
+          </div>
+        </div>
+        <div class="footer-col2">
+          <img src="Images/nuukeBlack.png">
+          <p>We are here for all beauty lovers that want clean,vegan and cruelty free beauty products.</p>
+        </div>
+        <div class="footer-col3">
+          <h3 class"h3Footer">TERMENI ȘI CONDIȚII</h3>
+          <ul>
+            <li>Confidențialitate</li>
+            <li>Politica de retur</li>
+            <li>Politica de livrare</li>
+            <li>Program de afiliere</li>
+            <li>Termeni și condiții </li>
+            <li>Setări cookie</li>
+            <li>Reclamatii</li>
+          </ul>
+        </div>
+        <div class="footer-col4">
+          <h3 class"h3Footer">URMARESTE-NE PE:</h3>
+          <ul>
+            <li><a href="https://wwww.Facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.tiktok.com/">Tik Tok</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">Copyright © 2022 Coty AAC Holdings,DD.Toate drepturile rezervate.</p>
+    </div>
+  </div>
+
+  <!----------------- js for toggle menu-------------->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <!----------------- js for contact page/send email-------------->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        SecureToken:" eb053623-132f-4567-8aab-aedfa2d43d68",
+        To: "nuukecosmetics@gmail.com",
+        From: document.getElementById("email").value,
+        Subject: "Subiectul formului",
+        Body: "Nume" + document.getElementById("name").value +
+          "<br /> Email" + document.getElementById("email").value +
+          "<br /> Telefon" + document.getElementById("phone").value +
+          "<br /> Mesaj" + document.getElementById("message").value
+      }).then(
+        message => alert("Mesajul a fost trimis cu succes!")
+      );
+    }
+  </script>
+</body>
+
+</html>
