@@ -22,7 +22,7 @@ body {
   margin-bottom: 20px;
   margin-left: 170px;
   border-radius: 40px;
-  font-size: 10px;
+  font-size: 12px;
   border: 1px solid #ccc;
   width: 300px;
 }
@@ -45,6 +45,7 @@ nav #MenuItems {
 nav button {
   border-style: solid;
   border-color: #577557;
+  font-size: 14px;
 }
 
 nav ul li {
